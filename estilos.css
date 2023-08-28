@@ -1,4 +1,13 @@
 /* estilos.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:ital,wght@0,200;0,400;0,700;1,600&display=swap');
+
+:root {
+    --fonte-principal: 'Poppins';
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* Reset de Estilos */
 * {
@@ -8,13 +17,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal);
     background-color: #f0f0f0;
 }
 
 h1 {
     position: relative;
-    right: 700px;
+    right: 500px;
+    top: 30px;
+    font-size: 40px;
     
 }
 
@@ -30,8 +41,20 @@ nav ul {
 }
 
 nav li {
+    position: relative;
+    bottom: 20px;
+    left: 400px;
+    font-size: 30px;
     display: inline; /* Deixa os itens da lista em linha */
     margin-right: 20px; /* Adiciona um espaçamento de 20px entre os itens da lista */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: rgb(37, 7, 7);
+    color: #a81616;
+    transition: 1s;
 }
 
 nav a {
@@ -54,6 +77,7 @@ main {
     text-align: center;
     float: left; /* flutua o elemento para a esquerda */
 }
+
 
 footer {
     background-color: #a81616;
